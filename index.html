@@ -1,12 +1,57 @@
-<meta name="viewport" content="initial-scale=1.0"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name='apple-itunes-app' content='app-id=1180475829; text/html; charset=utf-8' http-equiv="Content-Type">
-    <title>东金秀财</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .app {
+            position:fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #00305e
+        }
+        .app .img {
+            position:absolute;
+            top: 30%;
+            left: 50%;
+            margin-left: -40px;
+            display: inline-block;
+        }
+        .app .title {
+            position:absolute;
+            top: 42%;
+            width: 100%;
+            height: 40px;
+            color: white;
+            text-align: center;
+        }
+        .app .click {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #12b2ef;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-<!--  itms-services://?action=download-manifest&url= + plist文件的地址  -->
-    <a href='itms-services://?action=download-manifest&url=https://github.com/qpb/app/raw/master/manifest.plist'>一键安装</a>
+    <div class="app">
+        <img class="img" src="https://github.com/qpb/app/raw/master/icon.png" alt="">
+        <p class="title">东金秀财</p>
+        <a class="click" href='itms-services://?action=download-manifest&url=https://github.com/qpb/app/raw/master/manifest.plist'>一键安装 </a>
+    </div>
 </body>
-</html>
