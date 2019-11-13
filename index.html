@@ -16,16 +16,20 @@
             height: 100%;
             background-color: #00305e
         }
-        .app .img {
+        .app .head {
             position:absolute;
-            top: 30%;
+            width: 100%;
+            height: 100px;
+            top: 20%;
+        }
+        .app .head .img {
+            position:absolute;
             left: 50%;
             margin-left: -40px;
             display: inline-block;
         }
-        .app .title {
-            position:absolute;
-            top: 42%;
+        .app .head .title {
+            margin-top: 100px;
             width: 100%;
             height: 40px;
             color: white;
@@ -50,8 +54,10 @@
 </head>
 <body>
     <div class="app">
-        <img class="img" src="https://github.com/qpb/app/raw/master/icon.png" alt="">
-        <p class="title">东金秀财</p>
+        <div class="head">
+            <img class="img" src="https://github.com/qpb/app/raw/master/icon.png" alt="">
+            <p class="title">东金秀财</p>
+        </div>
         <a class="click" href='itms-services://?action=download-manifest&url=https://github.com/qpb/app/raw/master/manifest.plist'>一键安装 </a>
     </div>
 </body>
